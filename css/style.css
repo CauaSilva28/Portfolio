@@ -13,13 +13,13 @@
 /* variavel para cores */
 :root{
     --fundo-menu-lateral: #111111;
-    --fundo-claro:#c5c5c5;
+    --fundo-claro:rgb(49, 49, 49);
     --fundo-escuro:#1b1b1b;
 
     --texto-escuro:#535353;
     --texto-claro:#fff;
 
-    --detalhes-claro:#969696;
+    --detalhes-claro:#49833b;
     --detalhes-escuro:#000000;
 }
 
@@ -228,14 +228,14 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom:50px;
     font-size:26px;
     font-weight:600;
-    background: rgba(255,255,255,0.2);
+
     padding:4px;
 }
 #hero p span{
-    color:var(--detalhes-escuro);
+    color:var(--detalhes-claro);
     padding-bottom:4px;
     letter-spacing: 1px;
-    border-bottom:3px solid var(--detalhes-escuro);
+    border-bottom:3px solid var(--detalhes-claro);
 }
 @media(max-width:768px){
     #hero h1{
@@ -254,12 +254,12 @@ section{
     background: var(--fundo-claro);
 }
 .section-title{
-    padding-bottom:30px;
+    padding-bottom:5px;
 }
 .section-title h2{
     font-size:40px;
     font-weight: bold;
-    margin-bottom:20px;
+    margin-bottom:5px;
     padding-bottom:20px;
     color:var(--texto-claro)
 }
@@ -323,13 +323,16 @@ section{
     line-height:40px;
     display:block;
     font-weight:700;
-    color:var(--fundo-menu-lateral);
-    margin-left:60px;
+    color:var(--detalhes-claro);
+    margin-left:10px;
 }
 .conquistas .count-box p{
     padding:20px 0 0 0;
     margin:0 0 0 60px;
     font-size:16px;
+}
+.count-box-sinal{
+    float:left;
 }
 
 .bxicon{
@@ -349,21 +352,21 @@ section{
     text-transform: uppercase;
     display: block;
     font-weight: 600;
-    color: var(--detalhes-claro);
+    color: var(--texto-claro);
 }
 .skills .progress .skill .val{
     float:right;
     font-style:normal;
 }
 .skills .progress-bar-bg{
-    background: var(--texto-claro);
+    background: var(--detalhes-escuro);
     height: 10px;
 }
 .skills .progress-bar{
     width:1px;
     height:10px;
     transition:2s;
-    background: var(--fundo-menu-lateral);
+    background: var(--detalhes-claro);
 }
 
 /* Resumo */
@@ -415,7 +418,8 @@ section{
 /* portfolio // vendas // Catalogo */
 .img-fluid{
     width:100%;
-    border:1px solid var(--fundo-menu-lateral);
+    border-radius:2em;
+    box-shadow:2px 2px 8px #000;
 }
 
 .portfolio .portfolio-item {
