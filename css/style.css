@@ -281,6 +281,10 @@ section{
     font-size: 30px;
     color: var(--detalhes-claro);
 }
+.sobre .container .sobre-img{
+    width:100%;
+    border-radius:2em;
+}
 .sobre .container ul{
     list-style:none;
     padding:0;
@@ -416,10 +420,23 @@ section{
 }
 
 /* portfolio // vendas // Catalogo */
+
+/* área de slide ao clicar para as imagens dos portfólios aparecerem grandes na tela */
+.zoomable{
+    width:70% !important;
+}
+.gdesc-inner{
+    background-color:var(--fundo-escuro) !important;
+    border-top:2px solid var(--detalhes-claro);
+}
+.gslide-title{
+    color:var(--texto-claro) !important;
+    font-weight: bold !important;
+}
+/* fim area de slide portfólios */
+
 .img-fluid{
     width:100%;
-    border-radius:2em;
-    box-shadow:2px 2px 8px #000;
 }
 
 .portfolio .portfolio-item {
@@ -456,6 +473,7 @@ section{
     transition: 0.3s;
     position: relative;
     overflow: hidden;
+    border:1px solid var(--detalhes-claro);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -694,17 +712,16 @@ section{
     right:15px;
     bottom:15px;
     z-index:9999;
-    background:var(--fundo-menu-lateral);
+    background:var(--detalhes-claro);
     font-size:30px;
     width:50px;
     height:50px;
     padding:20px;
     border-radius:30px;
-    box-shadow: 3px 3px 3px 1px var(--detalhes-escuro);
     transition: 0.2s ease-in-out;
 }
 .back-to-top:hover{
-    background:var(--fundo-claro);
+    background:var(--texto-claro);
 }
 
 .back-to-top.active{
