@@ -534,6 +534,10 @@ section{
 
 
 /**   voltar    **/
+.servicos{
+    padding-bottom: 20px;
+}
+
 .servicos .icon-box {
     margin-bottom: 20px;
 }
@@ -551,11 +555,11 @@ section{
 }
 .servicos .icon i {
     font-size: 22px;
-    color: var(--texto-menu);
+    color: var(--detalhes-claro);
     line-height: 0;
 }
 .servicos .icon:hover {
-    background: var(--texto-menu);
+    background: var(--detalhes-escuro);
     transition: 0.3s;
 }
 .servicos .icon:hover i {
@@ -574,77 +578,9 @@ section{
     font-size: 18px;
 }
 
-/* Depoimentos */
-.depoimentos, .depoimentos .depoimentos-slider{
-    overflow:hidden;
-}
-.depoimentos .depoimento-item{
-    text-align:center;
-    min-height: 320px;
-}
-.depoimentos .depoimento-item .depoimento-img{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    margin:0 auto;
-}
-.depoimentos .depoimento-item h3{
-    font-size:18px;
-    font-weight: bold;
-    margin:10px 0 5px 0;
-}
-.depoimentos .depoimento-item h4{
-    font-family:arial;
-    font-size: 18px;
-}
-.depoimentos .depoimento-item i{
-    color:var(--detalhes-claro);
-}
-.depoimentos .depoimento-item .quote-left{
-    display: inline-block;
-    position:relative;
-    top:5px;
-    left:-2px;
-}
-.depoimentos .depoimento-item .quote-right{
-    display: inline-block;
-    position:relative;
-    top:-5px;
-    right:-2px;
-}
-.depoimentos .depoimento-item p{
-    font-style: italic;
-    background:var(--detalhes-escuro);
-    margin:0 15px 40px 15px;
-    padding:20px;
-    position: relative;
-    border-radius:10px;
-    box-shadow:5px 5px 5px 1px var(--detalhes-escuro);
-}
-.depoimentos .depoimento-item p::after{
-    content:"";
-    position:absolute;
-    bottom:-20px;
-    left: calc(50% + 10px);
-    width:0;
-    height:0;
-    border-top:20px solid var(--detalhes-escuro);
-    border-right:20px solid transparent;
-    border-left:5px solid transparent;
-}
-.depoimentos .swiper-pagination{
-    margin-top:50px;
-    position: relative;
-}
-.depoimentos .swiper-pagination .swiper-pagination-bullet{
-    width:15px;
-    height:15px;
-    background: var(--detalhes-claro);
-}
-
 /* Contato */
 .contato{
-    padding-bottom:130px;
+    padding-bottom:50px;
 }
 .contato .info{
     padding: 30px;
@@ -654,7 +590,7 @@ section{
 }
 .contato .info i{
     font-size: 20px;
-    color: var(--fundo-menu-lateral);
+    color: var(--detalhes-claro);
     background:var(--fundo-escuro);
     float:left;
     width:44px;
@@ -686,9 +622,13 @@ section{
 }
 .contato .email-form input,
 .contato .email-form textarea{
-    background:var(--detalhes-claro);
+    background:var(--texto-escuro);
     border:none;
     box-shadow: 3px 3px 3px 1px var(--detalhes-escuro);
+    color:var(--texto-claro);
+}
+.contato .email-form textarea{
+    max-height:350px;
 }
 .contato .email-form button[type=submit]{
     background:var(--fundo-menu-lateral);
@@ -762,74 +702,4 @@ section{
         width:auto;
         padding-right:20px 15px;
     }
-}
-
-/* Breadcrumbs */
-.breadcrumbs{
-    padding: 20px 0;
-    background-color: var(--detalhes-escuro);
-}
-.breadcrumbs h2{
-    color: var(--detalhes-claro);
-    font-size: 40px;
-}
-.breadcrumbs ol{
-    display:flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding:0;
-    margin:0;
-    font-size:15px;
-}
-.breadcrumbs ol li{
-    padding-left:10px;
-}
-.breadcrumbs ol li a{
-    color:var(--detalhes-claro);
-}
-.breadcrumbs ol li a:hover{
-    color:var(--fundo-menu-lateral);
-}
-.breadcrumbs ol li+li::before{
-    content:">";
-    display:inline-block;
-    padding-right:10px;
-}
-
-@media(max-width:768px){
-    .breadcrumbs .d-flex{
-        display:block !important;
-    }
-    .breadcrumbs ol{
-        display:block;
-    }
-    .breadcrumbs ol li{
-        display:inline-block;
-    }
-}
-
-
-.detalhes-slider .swiper-pagination{
-    margin-top:30px;
-    position: relative;
-}
-.detalhes-slider .swiper-pagination .swiper-pagination-bullet{
-    width:12px;
-    height:12px;
-    background: var(--detalhes-claro);
-}
-
-.portfolio-info{
-    background-color:#031a4d;
-    box-shadow:1px 1px 4px 5px #000b25;
-    margin-bottom:20px;
-    padding:20px 20px 10px 20px;
-}
-.portfolio-info ul li{
-    list-style: none;
-    margin-left:-30px;
-}
-
-.portfolio-info ul li strong{
-    color:var(--detalhes-claro);
 }

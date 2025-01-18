@@ -1,0 +1,107 @@
+/* CSS REFERENTE AS PÁGINAS DE NAVEGAÇÃO */
+
+/* Breadcrumbs */
+.breadcrumbs{
+    padding: 20px 0;
+    background-color: var(--detalhes-escuro);
+}
+.breadcrumbs h2{
+    color: var(--detalhes-claro);
+    font-size: 40px;
+}
+.breadcrumbs ol{
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding:0;
+    margin:0;
+    font-size:15px;
+}
+.breadcrumbs ol li{
+    padding-left:10px;
+}
+.breadcrumbs ol li a{
+    color:var(--detalhes-claro);
+}
+.breadcrumbs ol li a:hover{
+    color:var(--fundo-menu-lateral);
+}
+.breadcrumbs ol li+li::before{
+    content:">";
+    display:inline-block;
+    padding-right:10px;
+}
+
+@media(max-width:768px){
+    .breadcrumbs .d-flex{
+        display:block !important;
+    }
+    .breadcrumbs ol{
+        display:block;
+    }
+    .breadcrumbs ol li{
+        display:inline-block;
+    }
+}
+
+/* PÁGINA SITES */
+.detalhes-slider{
+    height:470px;
+}
+.swiper-slide .slide-img-container{
+    height:90%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.swiper-slide .slide-img-container img{
+    width: 95%;
+}
+
+@media(max-width:768px){
+    .detalhes-slider{
+        height:250px;
+    }
+
+    .swiper-slide .slide-img-container{
+        height:80%;
+    }
+}
+
+.detalhes-slider .swiper-pagination .swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    background: var(--detalhes-claro);
+}
+
+.portfolio-detalhes{
+    border-bottom:2px solid var(--detalhes-claro);
+}
+.portfolio-detalhes h2::after{
+    margin-top:5px;
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background-color: var(--detalhes-claro);
+}
+
+.portfolio-info{
+    background-color:var(--texto-escuro);
+    box-shadow:1px 1px 10px #000;
+    margin-bottom:20px;
+    padding:20px 20px 10px 20px;
+}
+.portfolio-info ul li{
+    list-style: none;
+    margin-left:-30px;
+}
+
+.portfolio-info ul li strong{
+    color:var(--detalhes-claro);
+}
+
+.portfolio-info a{
+    text-decoration: underline;
+    text-transform: uppercase;
+}

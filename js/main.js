@@ -236,42 +236,13 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
     speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: false
     },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    }
-  });
-
-  /**
-   * Controle deslizante de depoimentos
-   */
-  new Swiper('.depoimentos-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
     }
   });
 
