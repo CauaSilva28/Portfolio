@@ -105,3 +105,61 @@
     text-decoration: underline;
     text-transform: uppercase;
 }
+
+/* Page jogo */
+.page-jogo-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.page-jogo-container div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    width: 600px;
+}
+.page-jogo-column{
+    background-color: var(--fundo-claro);
+    box-shadow:2px 2px 8px #000;
+    padding:10px;
+}
+.page-jogo-column h3{
+    width:95%;
+}
+.page-jogo-column h3::after{
+    margin-top:5px;
+    margin-left:auto;
+    content:'';
+    display:block;
+    width:100%;
+    height:1px;
+    background-color: var(--detalhes-claro);
+}
+.page-jogo-column .jogoLogo{
+    background-color: var(--detalhes-claro);
+    width:100%;
+    padding:5px 0;
+}
+.page-jogo-column img{
+    height:130px;
+    
+}
+.page-jogo-column p{
+    text-indent: 15px;
+    padding:0 15px;
+}
+.page-jogo-container video{
+    width:500px;
+    height:300px;
+}
+
+@media(max-width:768px){
+    .page-jogo-container video{
+        width:400px;
+        height:250px;
+    }
+    .page-jogo-container div{
+        width: 400px;
+    }
+}
